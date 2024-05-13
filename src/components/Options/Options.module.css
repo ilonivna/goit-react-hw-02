@@ -1,0 +1,65 @@
+.wrapper {
+justify-content: center;
+display: flex;
+gap: 16px;
+margin-top: 16px;
+margin-left: 10px;
+margin-bottom: 16px;
+}
+
+.goodBtn {
+    border-color: green;
+}
+
+.neutralBtn {
+    border-color: yellow;
+}
+
+.badBtn {
+    border-color: red;
+}
+
+.resetBtn {
+    background-color: bisque;
+}
+
+
+
+button {
+    font-size: 16px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    padding: 13px 20px 13px;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+button:after {
+    content: "";
+    background-color: #ffe54c;
+    opacity: 0.7;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    height: 100%;
+    top: 7px;
+    left: 7px;
+    transition: 0.2s;
+}
+
+button:hover:after {
+    top: 0px;
+    left: 0px;
+}
+
+@media (min-width: 768px) {
+    button {
+        padding: 13px 50px 13px;
+    }
+}
